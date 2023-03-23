@@ -8,6 +8,10 @@ import { QRcode } from './components/QRcode/QRcode';
 import { HomePage } from './pages/home/Home';
 import { ServicesBusiness } from './components/servicesBusiness/servicesBusiness';
 
+// import  dotenv from 'dotenv';
+// dotenv.config()
+
+
 function App() {
   const [user, setUser] = useState({})
 

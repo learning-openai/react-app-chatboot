@@ -1,10 +1,12 @@
 import axios from "axios";
 import StandardResponse from "../../utils/standardRespoinse/standardResponse";
 
+
 class HttpClient{
 
     //  static basaeURL = "http://192.168.100.9:3000/api/v01/";
-     static basaeURL = "http://100.25.176.48:4000/api/v01/";
+     static basaeURL = "https://cursoss.store/api/v01/";
+    // static basaeURL = process.env.REACT_APP_SERVER_URL;
 
     static async loginUser(url, config={}){
 
