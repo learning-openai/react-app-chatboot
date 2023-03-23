@@ -1,0 +1,128 @@
+
+.container-login{
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.box-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+
+    -webkit-box-shadow: -2px -3px 60px -22px rgba(84,84,84,1);
+    -moz-box-shadow: -2px -3px 60px -22px rgba(84,84,84,1);
+    box-shadow: -2px -3px 60px -22px rgba(84,84,84,1);
+}
+
+.box-content:hover{
+    -webkit-box-shadow: -2px -3px 74px -22px rgba(84,84,84,1);
+    -moz-box-shadow: -2px -3px 74px -22px rgba(84,84,84,1);
+    box-shadow: -2px -3px 74px -22px rgba(84,84,84,1);
+}
+
+.box-content form{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+  
+    gap: 10px !important;
+
+}
+.incon-login{
+    height: 90px;
+    /* background-color: rebeccapurple; */
+    
+}
+
+.img-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-content img{
+    width: 40px;
+}
+
+.box-content form input{
+    background: white;
+    height: 15px;
+    /* border-radius: 20px; */
+    
+}
+
+.btn-login{
+    width: 90%;
+    border: 0;
+    margin-top: 20px !important;
+    border-radius: 7px;
+    height: 40px;
+    background-color: var(--color-fifth);
+    /* background-image: linear-gradient(90deg, #45027d 0%, var(--color-fifth) 100%); */
+    
+    
+    color: white;
+    font-weight: 700;
+}
+
+.error-message{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: #fa7676;
+    height: 30px;
+    width: 90%;
+}
+
+.input-form{
+    width: 90%;
+    border-style: ridge;
+    outline: none;
+    border-radius: 5px;
+    height: 40px !important;
+    border-width: 1.4px;
+    border-color: rgb(159, 0, 207);
+    font-weight: 600;
+
+}
+
+.logo-nuxtbo{
+    width: 170px !important;
+}
+
+.box-content form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media queries */
+
+@media  (max-width:640px){
+    .box-content{
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        height: 100vh;
+    }
+    .input-form{
+        width: 90%;
+    }
+    .btn-login{
+        width: 90%;
+    }
+}

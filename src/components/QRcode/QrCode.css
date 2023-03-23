@@ -1,0 +1,87 @@
+
+.container-qr{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    /* background-color: rebeccapurple; */
+    /* background-color: #00a884 */
+}
+
+.container-qr .qr{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: rebeccapurple; */
+
+}
+
+.qr img{
+    width: auto;
+    height: auto;
+    -webkit-box-shadow: 10px -2px 91px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -30px -2px 91px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px -2px 21px -8px rgba(0,0,0,0.75);
+}
+.text-cargando{
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.text-message{
+    margin-bottom: 20px;
+    width: 70%;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    font-weight: 600;
+    font-size: 1.02rem;
+}
+
+.reaload-qr-data{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    /* background: rebeccapurple; */
+}
+
+.text-content span{
+    color: rgb(53, 53, 53);
+    font-weight: 800;
+}
+.content-btn-realod{
+    background-color: rgb(2, 187, 172);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.content-btn-realod:hover{
+    background-color: rgb(2, 184, 153);
+}
+.content-btn-realod img{
+    width: 35px;
+    height: 35px;
+    /* color: white; */
+}
+
+
+/* -----media queries ---- */
+
+@media  (max-width:640px){
+
+    .text-message{
+        width: 95%;
+        text-align: center;
+        text-align: justify;
+    }
+    
+}

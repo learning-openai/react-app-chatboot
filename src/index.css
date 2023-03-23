@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  
+  
+  scroll-behavior: smooth;
+
+  transition: .4s ease-in;
+}
+
+:root{
+
+    /* Colores base */
+    --color-negro: #000;
+    --color-blanco: #fff;
+    --color-gris-claro: #f0f0f0;
+    --color-gris-medio: #999;
+    --color-gris-oscuro: #333;
+  
+    /* Paleta de colores */
+    --color-primary: #3C2E59;
+    --color-secundary: #5F3066;
+    --color-third: #303B66;
+    --color-fourth: #593570;
+    --color-fifth: #833063;
+  
+    /* Tonos */
+    --color-primary-claro: lighten(var(--color-primary), 20%);
+    --color-primary-oscuro: darken(var(--color-primary), 20%);
+    --color-secundary-claro: lighten(var(--color-secundary), 20%);
+    --color-secundary-oscuro: darken(var(--color-secundary), 20%);
+    --color-terciario-claro: lighten(var(--color-terciario), 20%);
+    --color-terciario-oscuro: darken(var(--color-terciario), 20%);
+
+}
+

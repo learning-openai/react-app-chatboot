@@ -1,0 +1,129 @@
+.content_home_page{
+    background: rgb(226, 226, 226);
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(16rem, 1fr);
+    gap: 2px;
+
+    overflow-y: scroll;
+    transition: .4s ease-in;
+}
+
+.menu-lateral{
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /* background-color:rgb(8, 140, 228); */
+}
+
+.visibility-nenu-leteral{
+    display: none;
+}
+
+
+.box-home{
+
+    grid-column-start: 3;
+    grid-column-end: 13;
+
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    grid-auto-rows: auto; */
+    background-color: rgb(7, 194, 178);
+}
+
+.width-box-home{
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+/* in to box-home */
+.head{
+    background-color: coral;
+
+}
+
+.navbar{
+    background-color: var(--color-primary);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+    color: white;
+    font-weight: 600;
+    /* cursor: pointer; */
+}
+
+.options{
+    background-color: rgb(89, 89, 218);
+    display: flex;
+    gap: 8px;
+    height: 40px;
+    align-items: center;
+    /* display: flex; */
+}
+
+
+/* -------------- */
+
+
+/* content data */
+
+.content-data{
+    /* display: grid;
+    grid-template-rows: auto; */
+    height: 100%;
+    /* width: 100%; */
+    padding: 20px;
+    background: #F4F5F8;
+    /* overflow-y: scroll; */
+}
+
+/* ----------- */
+
+/* content bien venida */
+.content-bienvenida{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items:center;
+}
+.contetn-logo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contetn-logo-text img{
+    filter: opacity(0.6) !important;
+}
+/* ---------------------- */
+
+/* Media query */
+
+
+@media (max-width:768px){
+    .menu-lateral{
+        /* display: block; */
+        background: rebeccapurple;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+        /* display: none; */
+        /* display: inline; */
+    
+    }
+    .box-home{
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+}
+

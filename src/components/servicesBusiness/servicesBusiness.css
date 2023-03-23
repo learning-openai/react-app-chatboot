@@ -1,0 +1,44 @@
+
+
+.container_services_business{
+    position: relative;
+    /* background: #db7272; */
+    border-width: 1px;
+    /* border-color: blueviolet; */
+    width: 100%;
+    height: 100%;
+}   
+
+
+/* services  */
+
+.service{
+
+    /* background: rgb(141, 141, 141); */
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(20rem,1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.card-services{
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card-services:hover{
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
+}
+
+.card-foot{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+

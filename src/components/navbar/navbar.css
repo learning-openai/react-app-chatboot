@@ -1,0 +1,15 @@
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: rebeccapurple; */
+    width: inherit;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.right-contenet svg{
+    width: 40px !important;
+    height: 40px !important;
+}
