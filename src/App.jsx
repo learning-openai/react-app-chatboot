@@ -25,11 +25,10 @@ function App() {
         JSON.stringify(user)
       } */}
         <Routes>
-          
           <Route path='/login' element={<Loging updateUser={updateUser} />} />
-
           <Route path='/qrcode' element={
             <ProtectedRoute user={user}>
+
             <QRcode/>
           </ProtectedRoute>
           } />

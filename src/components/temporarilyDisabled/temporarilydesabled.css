@@ -1,0 +1,15 @@
+
+.content-temporarily-disable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: inherit;
+    height: inherit;
+}
+
+.content-temporarily-disable{
+    color: rgb(129, 129, 129);
+    font-weight: 700;
+    font-size: 20px;
+}

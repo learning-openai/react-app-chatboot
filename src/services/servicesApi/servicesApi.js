@@ -11,8 +11,8 @@ class HttpClient{
     static async loginUser(url, config={}){
 
         try {
-            console.log(config)
-            console.log(this.basaeURL+url)
+            // console.log(config)
+            // console.log(this.basaeURL+url)
             const data = await axios.post(this.basaeURL+url,config);
     
             // console.log(data?.data)

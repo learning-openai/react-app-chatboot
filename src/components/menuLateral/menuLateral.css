@@ -50,6 +50,16 @@
 }
 /* ---------------- */
 
+/* text menu lateral */
+.text-option-menu{
+    font-weight: 600;
+    color: var(--color-primary);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* ------------------ */
+
 /* icons menu latera */
 .icon_content{
     display: none;

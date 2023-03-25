@@ -1,6 +1,7 @@
 import React,{ useState }from "react";
 
 import { Outlet, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion'
 
 import './home.css'
 import { MenuLateral } from "../../components/menuLateral/menuLateral";
@@ -42,10 +43,10 @@ export const HomePage = ({user, updateUser})=> {
                     {
                         location.pathname==='/home'?
                         <div className="content-bienvenida w-full h-full">
-                        <div className="contetn-logo-text">
+                        <motion.div initial={{y:100}} animate={{y:0}} className="contetn-logo-text">
                             <img src={logo_nucbo_img} alt="" />
                             <span className="text-gray-500 font-bold">Chatbot con inteligencia artificial</span>
-                        </div>
+                        </motion.div>
                     </div>
                     :''
                     }

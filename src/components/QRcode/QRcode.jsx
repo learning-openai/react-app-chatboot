@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import './QrCode.css';
 import svg_reload from '../../assets/restore_black.svg'
 import { Loading } from "../loading/Loading";
+import { TemporarilyDisabled } from "../temporarilyDisabled/TemporarilyDisabled";
 
 export const QRcode=()=>{
 
@@ -20,7 +21,7 @@ export const QRcode=()=>{
 
         // if(user){
             setloading(true)
-            getQR()
+            // getQR()
         // }
     },[])
 
@@ -47,14 +48,17 @@ export const QRcode=()=>{
     useEffect(()=>{
       return()=>{
         console.log(' ---- exit component ---')
-        navigate('/login')
+        // navigate('/login')
       }
     },[])
 
     return(
        
         <div className="container-qr">
-            <div className="qr">
+            {
+                true?<TemporarilyDisabled></TemporarilyDisabled>
+                :
+                <div className="qr">
                 {
                     !loading?''
                     :
@@ -82,6 +86,8 @@ export const QRcode=()=>{
                 </div>
                 }
             </div>
+            }
+            
         </div>
     );
 }

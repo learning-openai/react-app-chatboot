@@ -36,16 +36,16 @@ export const MenuLateral=({user, handaleVisibility, updateUser})=>{
             </div>
             <ul className="ul_content">
                 <Link onClick={()=>{handleVisibilitiloca()}} to="services">
-                    <li><span className="icon_content"> icon </span>Mi negocio/clinica</li>
+                    <li><span className="icon_content"> icon </span><span className="text-option-menu">Mi negocio/clinica</span></li>
                 </Link>
                 <Link onClick={()=>{handleVisibilitiloca()}} to="qrcode">
-                    <li><span className="icon_content"> icon </span>Conectar Whatsapp</li>
+                    <li><span className="icon_content"> icon </span><span className="text-option-menu">Conectar Whatsapp</span></li>
                 </Link>
                 
-                <li><span className="icon_content"> icon </span>Respuestas</li>
-                <li><span className="icon_content"> icon </span>Configurción</li>
+                <li><span className="icon_content"> icon </span><span className="text-option-menu">Respuestas</span></li>
+                <li><span className="icon_content"> icon </span><span className="text-option-menu">Configurción</span></li>
                 <Link  onClick={()=>updateUser({})} to="/login">
-                    <li><span className="icon_content"> icon </span>Salir</li>
+                    <li><span className="icon_content"> icon </span><span className="text-option-menu">Salir</span></li>
                 </Link>
             </ul>
         </div>

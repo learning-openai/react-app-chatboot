@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion';
 
 import logo_nuxtbo from '../../assets/logo_nuxtbo.png'
+import { Loading } from '../loading/Loading';
 
 export default function Loging({updateUser}){
 
@@ -21,11 +22,13 @@ export default function Loging({updateUser}){
       password:''
     });
 
+    const [loading, setloading] = useState(false)
+
     const [messageError, setmessageError] = useState(false)
 
     async function handleInputs(e){
       // e.preventDefault();
-      console.log(e.target.value)
+      // console.log(e.target.value)
        setCredencials({
         ...credencials,
         [e.target.name]:e.target.value
@@ -36,22 +39,24 @@ export default function Loging({updateUser}){
 
     async function sendData(e){
       e.preventDefault();
-      console.log(credencials)
+      // console.log(credencials)
       if(credencials.password !='' && credencials.email != ''){
+        setloading(true)
 
         const response = await HttpClient.loginUser('/user/singin',{'email':credencials.email, 'password':credencials.password});
-        console.log(response)
+        // console.log(response)
         if(response?.status === "successful"){
           updateUser(response?.data?.data[0])
-          console.log('---------------------')
-          console.log(response?.data?.data[0])
+          // console.log('---------------------')
+          // console.log(response?.data?.data[0])
+          setloading(false)
           navigate('/home')  
           // return <Navigate to='/qrcode'></Navigate>
         }
 
         if(response?.status === "error"){
           setmessageError(true)
-          
+          setloading(false)
         }
         
       }
@@ -68,6 +73,11 @@ export default function Loging({updateUser}){
     return(
        
         <div className='container-login'>
+          {
+            loading?
+            <Loading></Loading>
+            :''
+          }
           <div className='box-content'>
             <div className='incon-login'>
               <motion.div initial={{y:-80}} animate={{ y:0}} className="img-content">
