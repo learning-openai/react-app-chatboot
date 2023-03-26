@@ -93,7 +93,7 @@ export const ServicesEmbedding = ({idService})=>{
                                         </svg>
                                         <h3 className="font-bold">{serviceEmb?.title}</h3>
                                     </div>
-                                    <div className="car-body">
+                                    <div className="card-body">
                                         <p>{serviceEmb?.description}
                                         </p>
                                     </div>

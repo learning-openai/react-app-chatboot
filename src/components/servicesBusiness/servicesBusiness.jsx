@@ -65,7 +65,7 @@ export const ServicesBusiness=({user})=>{
                                 </svg>
                                 <h3 className="font-bold">{service?.name}</h3>
                             </div>
-                            <div className="car-body">
+                            <div className="card-body">
                                 <p>{service?.description}
                                 </p>
                             </div>
@@ -74,7 +74,7 @@ export const ServicesBusiness=({user})=>{
                             <div className="card-foot pt-6 py-3">
                                     <h4> {service?.state===true?'Activo':'Desactivado'}</h4>
                                     <div className="option_cards">
-                                        <a href="#section_servcices_embedding" onClick={()=>{console.log(service); businessService(service)}} className="bg-gray-200 hover:bg-gray-300 mx-0.5 px-4 rounded-sm">Servicios</a>
+                                        <button onClick={()=>{console.log(service); businessService(service)}} className="bg-gray-200 hover:bg-gray-300 mx-0.5 px-4 rounded-sm">Servicios</button>
                                         <button className="bg-gray-200 hover:bg-gray-300 mx-0.5 px-4 rounded-sm"> Configurar </button>
                                     </div>
                             </div>

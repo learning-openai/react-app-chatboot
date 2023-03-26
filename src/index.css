@@ -7,16 +7,16 @@ html, body {
   
   
   scroll-behavior: smooth;
-
   transition: .4s ease-in;
 }
+
 
 :root{
 
     /* Colores base */
     --color-negro: #000;
     --color-blanco: #fff;
-    --color-gris-claro: #f0f0f0;
+    --color-gris-claro: #e0e0e0;
     --color-gris-medio: #999;
     --color-gris-oscuro: #333;
   
@@ -36,4 +36,5 @@ html, body {
     --color-terciario-oscuro: darken(var(--color-terciario), 20%);
 
 }
+
 
