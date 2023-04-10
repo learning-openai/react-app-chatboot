@@ -39,7 +39,7 @@ function App() {
             </ProtectedRoute>
           }>
             <Route path='services' element={<ServicesBusiness user={user}></ServicesBusiness>} ></Route>
-            <Route path='qrcode' element={<QRcode></QRcode>} ></Route>
+            <Route path='qrcode' element={<QRcode user={user}></QRcode>} ></Route>
           </Route>
           <Route path='/*' element={<Loging updateUser={updateUser} />} />
         </Routes>

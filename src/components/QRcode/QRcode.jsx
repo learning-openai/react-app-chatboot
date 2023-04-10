@@ -8,7 +8,7 @@ import svg_reload from '../../assets/restore_black.svg'
 import { Loading } from "../loading/Loading";
 import { TemporarilyDisabled } from "../temporarilyDisabled/TemporarilyDisabled";
 
-export const QRcode=()=>{
+export const QRcode=({ user })=>{
 
     const navigate = useNavigate();
 
@@ -19,10 +19,10 @@ export const QRcode=()=>{
 
     useEffect(()=>{
 
-        // if(user){
+        if(user?.typeService === 'whatsappWeb'){
             setloading(true)
-            // getQR()
-        // }
+            getQR()
+        }
     },[])
 
     useEffect(()=>{
@@ -30,7 +30,7 @@ export const QRcode=()=>{
         var setinterval  = setInterval((()=>{
             setMsReload(false)
           }),60000) 
-          return () => clearInterval(setinterval);;
+          return () => clearInterval(setinterval);
     },[loading])
 
 
@@ -55,8 +55,9 @@ export const QRcode=()=>{
     return(
        
         <div className="container-qr">
+            {/* {JSON.stringify(user)} */}
             {
-                true?<TemporarilyDisabled></TemporarilyDisabled>
+                user?.typeService === 'whatsappApiCloud'? <TemporarilyDisabled></TemporarilyDisabled>
                 :
                 <div className="qr">
                 {
